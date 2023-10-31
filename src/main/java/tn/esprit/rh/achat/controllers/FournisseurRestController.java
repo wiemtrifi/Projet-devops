@@ -37,7 +37,7 @@ public class FournisseurRestController {
 	public Fournisseur addFournisseur(@RequestBody Fournisseur f) {
 
 		return fournisseurService.addFournisseur(f);
-	}w
+	}
 
 	// http://localhost:8089/SpringMVC/fournisseur/remove-fournisseur/{fournisseur-id}
 	@DeleteMapping("/remove-fournisseur/{fournisseur-id}")
