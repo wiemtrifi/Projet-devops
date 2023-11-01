@@ -9,6 +9,7 @@ RUN mkdir /app
 
 # Download the JAR from Nexus and copy it into the container
 RUN wget -O /app/achat-1.0.jar $NEXUS_URL/$ARTIFACT_PATH
+# FF
 
 EXPOSE 8082
 
