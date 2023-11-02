@@ -13,7 +13,7 @@ services:
   achat-backend:
     depends_on:
       - mysqldb
-    image: Achrefkaroui/Projet-devops:1.0.0
+    image: achrefkaroui/devopsproject:1.0.0
     restart: on-failure
     environment:
       MYSQL_ROOT_PASSWORD: root_password
