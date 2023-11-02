@@ -5,11 +5,12 @@ services:
     image: mysql:5.7
     restart: unless-stopped
     environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD : yes
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes" # Added quotes
     ports:
       - 3306:3306
     volumes:
       - db:/var/lib/mysql
+
   achat-backend:
     depends_on:
       - mysqldb
@@ -21,5 +22,6 @@ services:
       - 8089:8089
     stdin_open: true
     tty: true
-  volumes:
-    db:
+
+volumes:
+  db:
