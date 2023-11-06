@@ -12,4 +12,4 @@ RUN wget -O /devopsproject/achat-1.0.jar $NEXUS_URL/$ARTIFACT_PATH
 
 EXPOSE 8082
 
-ENTRYPOINT ["java", "-jar", "/app/achat-1.0.jar"]
+ENTRYPOINT ["java", "-jar", "/devopsproject/achat-1.0.jar"]
