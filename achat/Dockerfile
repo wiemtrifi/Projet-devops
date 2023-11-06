@@ -5,7 +5,7 @@ EXPOSE 8082
 
 # Add the JAR file from your local machine to the Docker image.
 # Make sure the JAR file is in the same directory as this Dockerfile.
-ADD target/devopsproject-1.0.jar devopsproject-1.0.jar
+ADD target/achat-0.1.jar devopsproject.jar
 
 # Define the command to run when the Docker container starts.
 ENTRYPOINT ["java", "-jar", "/devopsproject-1.0.jar"]
