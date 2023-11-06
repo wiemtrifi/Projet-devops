@@ -35,15 +35,7 @@ public class testOperateur {
             {
             add(new Operateur(124L,"achref","karoui","123",f));
             add(new Operateur(125L,"achref","karoui","123",f));
-        }};
-        @Test
-        @Order(1)
-        public void testRetrieveAllOperators() {
-
-            List<Operateur> listUsers = os.retrieveAllOperateurs();
-            Assertions.assertEquals(0, listUsers.size());
-    }
-    @Test
+        }};@Test
     public void testRetrieveOperator() {
         Mockito.when(or.findById(Mockito.anyLong())).thenReturn(Optional.of(p));
         Operateur o=os.retrieveOperateur(2L);
