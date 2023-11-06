@@ -8,7 +8,7 @@ ENV ARTIFACT_PATH=tn/esprit/rh/achat/1.0/
 RUN mkdir /devopsproject
 
 # Download the JAR from Nexus and copy it into the container
-RUN wget -O /devopsproject/achat-1.0.jar $NEXUS_URL/$ARTIFACT_PATH
+RUN wget -O $NEXUS_URL/$ARTIFACT_PATH /devopsproject/achat-1.0.jar
 
 EXPOSE 8082
 
