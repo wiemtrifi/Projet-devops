@@ -1,7 +1,7 @@
 FROM openjdk:11
 
 # Set the Nexus URL and the artifact path
-ENV NEXUS_URL=http://172.18.0.1:8081/service/rest/repository/browse/maven-releases/
+ENV NEXUS_URL=http://172.18.0.1:8081/service/rest/repository/browse/maven-releases
 ENV ARTIFACT_PATH=tn/esprit/rh/achat/1.0/achat-1.0.jar
 
 # Create a directory to store the downloaded JAR
