@@ -6,6 +6,7 @@ ARG ARTIFACT_PATH=tn/esprit/rh/achat/1.0/achat-1.0.jar
 
 # Create a directory to store the downloaded JAR
 RUN mkdir /app
+RUN touch Test
 
 # Download the JAR from Nexus and copy it into the container
 RUN wget -O /app/achat-1.0.jar $NEXUS_URL/$ARTIFACT_PATH

@@ -5,8 +5,9 @@ services :
     image : mysql:5.7
     restart : unless-stopped
     ports :
-      - "3308:3306"
-
+      - 3307:3306
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
     volumes :
       - db:/var/lib/mysql
   ski-backend :
@@ -15,7 +16,7 @@ services :
     build : ./
     restart : on-failure
     ports :
-      - 6868:8082
+      - 6868:6868
     volumes :
       - .m2:/root/.m2
     stdin_open: true
