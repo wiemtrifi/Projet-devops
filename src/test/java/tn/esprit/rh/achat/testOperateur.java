@@ -27,7 +27,7 @@ public class testOperateur {
         @InjectMocks
         OperateurServiceImpl os;
     @InjectMocks
-    
+
         OperateurRepository or;
         Set<Facture> f=new HashSet<>();
         Operateur p = new Operateur(123L,"achref","karoui","123",f);
