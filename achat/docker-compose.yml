@@ -7,7 +7,7 @@ services :
     restart: unless-stopped
     environment:
       - MYSQL_ROOT_PASSWORD=
-      - MYSQL_DATABASE=projetdevops-db
+      - MYSQL_DATABASE=projetdevopsdb
     ports:
       - 3306:3306
     volumes:
@@ -22,7 +22,7 @@ services :
       - 8082:8082
     environment:
      SPRING_APPLICATION_JSON: '{
-         "spring.datasource.url"  : "jdbc:mysql://mysqldb:3306/projetdevops-db?useSSL=false&createDatabaseIfNotExist=true",
+         "spring.datasource.url"  : "jdbc:mysql://mysqldb:3306/projetdevopsdb?useSSL=false&createDatabaseIfNotExist=true",
          "spring.datasource.username" : "root",
          "spring.datasource.password" : "",
          "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL5InnoDBDialect",
