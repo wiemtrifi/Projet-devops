@@ -13,15 +13,15 @@ services :
     volumes:
       - db:/var/lib/mysql
 
-  app-timesheet:
+  app-achat:
     depends_on:
       - mysqldb
-    build: wiemtrifi/projetdevops:1.0.0
+    image: wiemtrifi/projetdevops:1.0.0
     restart: on-failure
     ports:
       - 8082:8082
-  environment:
-    SPRING_APPLICATION_JSON: '{
+    environment:
+     SPRING_APPLICATION_JSON: '{
          "spring.datasource.url"  : "jdbc:mysql://mysqldb:3306/projetdevops-db?useSSL=false&createDatabaseIfNotExist=true",
          "spring.datasource.username" : "root",
          "spring.datasource.password" : "",
